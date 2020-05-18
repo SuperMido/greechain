@@ -20,17 +20,15 @@
 		$("#coffeeSupplychainContractAddress").html(globIcoAddress.CoffeeMain);
 		$("#userContractAddress").html(globIcoAddress.CoffeeUser);
 
-	
-		
 		if (typeof web3 !== 'undefined') 
 		{
-		//   web3 = new Web3(web3.currentProvider);
-		  web3 = new Web3(new Web3.providers.HttpProvider("https://winter-wandering-thunder.rinkeby.quiknode.pro/7f2ad124d76e6ac40604842d2c003283d3cb0c98/"));
+		  web3 = new Web3(window.ethereum);
+		  ethereum.enable();
+		  //   web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/d7dde0fa90274c6d873d75e84505f624"));
 		} else {
 		  // set the provider you want from Web3.providers
-		  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+			web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 		}
-		
 
 		getCurrentAccountAddress((address)=>{
 			/*  To Restrict User in Admin Section */
@@ -42,9 +40,7 @@
 			if(currentPanel == "admin.php")
 			{
 				if(address != globAdminAddress){
-					// window.location = "index.php";
-					console.log(address);
-					console.log(globAdminAddress);
+					window.location = "index.php";
 				}
 			}
 		});
@@ -98,7 +94,6 @@
 		callback = callback || false;
 		web3.eth.getCoinbase()
 		.then((_coinbase)=>{
-			console.log('success');
 			callback(_coinbase);
 		})
 		.catch((err)=>{
