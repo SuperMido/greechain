@@ -10,13 +10,13 @@
                     <div class="form-group text-center">
                         <div class="col-xs-12">
                              <!-- <img src="dist/images/imperialsofetch.png"/> -->
-                             <img src="plugins/images/coffee-supplychain.png" style="width: 225px; height: 225px;" />
+                             <img src="plugins/images/logogre.png" style="width: 225px; height: 225px;" />
                         </div>
                     </div>
                     <div class="form-group  text-center">
                         <div class="col-xs-12">
                            <h4><b>Welcome to Coffee Supplychain</b></h4>
-                            <h6>Supplychain using Ethereum smart contract, web3 and many more.</h6>
+                            <h6>Package product’s detail into block by blockchain.</h6>
                         </div>
                     </div>
                     <div class="form-group text-center">
