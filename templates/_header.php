@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/imperialsofetch.png">
-    <title>Imperial Softech</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/icon.png">
+    <title>GreeChain</title>
     <!-- Bootstrap Core CSS -->
     <link href="plugins/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">   
@@ -62,7 +62,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top m-b-0 sidebar">
             <div class="navbar-header"> 
-                <div class="top-left-part"><a class="logo" href="index.php"><b><img src="plugins/images/imperialsofetch.png" alt="home" /></b><span class="hidden-xs"> Imperial Softech</span></a></div>
+                <div class="top-left-part"><a class="logo" href="index.php"><b><img src="plugins/images/icon.png" alt="home" /></b><span class="hidden-xs"> GreeChain</span></a></div>
             </div>
         </nav>
         <!-- Left navbar-header -->
