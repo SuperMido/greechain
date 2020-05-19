@@ -24,7 +24,10 @@
                             <a href="https://metamask.io/" target="_blank" class="btn btn-rounded btn-block btn-primary">Get MetaMask</a>
                         </div>
                          <div class="col-xs-6 p-b-20">
-                            <a href="user.php" class="btn btn-rounded btn-block btn-info">Log In</a>
+                            <a href="admin.php" class="btn btn-rounded btn-block btn-danger">Log in as Administrator</a>
+                        </div>
+                        <div class="col-xs-6 p-b-20">
+                            <a href="user.php" class="btn btn-rounded btn-block btn-info">Log in as User</a>
                         </div>
                     </div>   
             </div>

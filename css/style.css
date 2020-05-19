@@ -902,8 +902,15 @@ pre {
   color: #fff;
 }
 .top-left-part {
-  width: 220px;
+  width: 400px;
   float: left;
+  
+}
+.top-right-part {
+  padding-top: 10px;
+  width: 80px;
+  float: right;
+  
 }
 .top-left-part a {
   color: #fff;
