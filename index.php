@@ -6,7 +6,7 @@
     </div>
     <section id="wrapper" class="login-register">
         <div class="login-box">
-            <div class="white-box">
+            <div class="login-white-box">
                     <div class="form-group text-center">
                         <div class="col-xs-12">
                              <!-- <img src="dist/images/imperialsofetch.png"/> -->
