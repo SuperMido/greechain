@@ -1483,9 +1483,19 @@ table.dataTable thead .sorting:after {
   font-size: 40px;
 }
 .white-box {
-  background: #fff;
+  background-color: #fff;
   padding: 25px;
   margin-bottom: 15px;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.login-white-box {
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 5%;
+  
 }
 .white-box .box-title {
   margin: 0 0 12px;
@@ -3838,10 +3848,31 @@ table.focus-on tbody tr.focused th {
   height: 100%;
   position: fixed;
 }
+
+@media(max-width: 750px){
+  .login-register {
+    background: url(../plugins/images/login-register.jpg) center center/cover
+      no-repeat !important;
+    height: 812px;
+    position: fixed;
+  }
+  .content-wrap{
+    height: 100%;
+  }
+}
 .login-box {
   background: #fff;
   width: 400px;
   margin: 10% auto 0;
+  border-radius: 5%;
+  /* border-radius */
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ border-radius: 5%;
+/* box-shadow */
+ -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+ -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+ box-shadow: rgba(7, 60, 158, 0.829) 10px 10px 30px;
 }
 .login-box .footer {
   width: 100%;

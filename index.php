@@ -21,7 +21,7 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-xs-6 p-b-20">
-                            <a href="https://metamask.io/" target="_blank" class="btn btn-rounded btn-block btn-primary">Get MetaMask</a>
+                            <a href="https://metamask.io/" target="_blank" class="btn btn-rounded btn-block btn-success">Get MetaMask</a>
                         </div>
                          <div class="col-xs-6 p-b-20">
                             <a href="admin.php" class="btn btn-rounded btn-block btn-danger">Log in as Administrator</a>

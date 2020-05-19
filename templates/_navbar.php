@@ -12,7 +12,7 @@
                 <div class="top-left-part">
                     <a class="logo" href="index.php">
                         <b><img src="plugins/images/icon.png" alt="home" /></b>
-                        <span class="hidden-xs"> GreeChain</span>
+                        <span class="hidden-xs"><strong>GreeChain</strong></span>
                     </a>
                 </div>
                 <div class="top-right-part">
