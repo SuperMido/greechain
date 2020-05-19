@@ -1,4 +1,4 @@
-<?php include('templates/_header.php'); ?>
+<?php include('templates/_navbar.php'); ?>
         
 
             <div class="container-fluid">
