@@ -907,10 +907,13 @@ pre {
   
 }
 .top-right-part {
-  padding-top: 10px;
-  width: 80px;
+  padding-top: 12px;
+  width: 120px;
   float: right;
   
+}
+.top-right-part button{
+  border-radius: 10px;
 }
 .top-left-part a {
   color: #fff;
