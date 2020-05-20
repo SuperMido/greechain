@@ -152,10 +152,6 @@
                                             <td><span class="label label-danger font-weight-100">NHAP_KHO</span></td>
                                         </tr>
                                         <tr>
-                                            <td>Chế biến</td>
-                                            <td><span class="label label-primary font-weight-100">CHE_BIEN</span></td>
-                                        </tr>
-                                        <tr>
                                             <td>Phân phối</td>
                                             <td><span class="label label-primary font-weight-100">PHAN_PHOI</span></td>
                                         </tr>
@@ -263,7 +259,6 @@
                                             <option value="HARVESTER">Thu hoạch</option>
                                             <option value="EXPORTER">Xuất khẩu</option>
                                             <option value="IMPORTER">Nhập khẩu</option>
-                                            <option value="PROCESSOR">Xử lý</option>
                                             <option value="PROCESSOR">Phân phối</option>
                                         </select>    
                                     </div>
