@@ -3854,8 +3854,7 @@ table.focus-on tbody tr.focused th {
 
 @media (max-width: 750px) {
   .login-register {
-    background: url(../plugins/images/login-register.jpg) center center/cover
-      no-repeat !important;
+    background: url(../plugins/images/login-register.jpg) center center/cover no-repeat !important;
     height: 812px;
     position: fixed;
   }
