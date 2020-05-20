@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
 
 		if (currentPanel == "admin.php") {
 			getUser(globUserContract, function (data) {
-				if (data.role != "ENTERPRISE") window.location = "index.php";
+				if (data.role != "DOANH_NGHIEP") window.location = "index.php";
 			});
 			globAdminAddress = address;
 		}
@@ -314,7 +314,7 @@ function buildUserTable(globUserData) {
 			roleClass = 'danger';
 		} else if (role == 'PHAN_PHOI') {
 			roleClass = 'primary';
-		} else if (role == 'ENTERPRISE') {
+		} else if (role == 'DOANH_NGHIEP') {
 			roleClass = 'secondary';
 		}
 
