@@ -10,7 +10,7 @@
         <nav class="navbar navbar-default navbar-static-top sidebar navbar-expand-lg">
             <div class="navbar-header">
                 <div class="top-left-part">
-                    <a class="logo" href="index.php">
+                    <a class="logo" href="#">
                         <b><img src="plugins/images/icon.png" alt="home" /></b>
                         <span class="hidden-xs"><strong>GreeChain</strong></span>
                     </a>
