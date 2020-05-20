@@ -1,5 +1,5 @@
         <footer class="footer text-center"> 
-            © <?php echo date('Y');?> Coffee SupplyChain by <a href="http://www.imperialsoftech.com/" target="_blank">imperialsoftech.com</a> 
+            © <?php echo date('Y');?> Coffee SupplyChain by GreeChain
         </footer>
         </div>
         <!-- /#page-wrapper -->
