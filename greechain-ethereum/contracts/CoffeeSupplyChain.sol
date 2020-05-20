@@ -84,7 +84,7 @@ contract CoffeeSupplyChain is Ownable
                                     string _coffeeFamily,
                                     string _typeOfSeed,
                                     string _fertilizerUsed) 
-                                public isValidPerformer(_batchNo,'FARM_INSPECTION') returns(bool) {
+                                public isValidPerformer(_batchNo,'NONG_TRAI') returns(bool) {
         /* Call Storage Contract */
         bool status = supplyChainStorage.setFarmInspectorData(_batchNo, _coffeeFamily, _typeOfSeed, _fertilizerUsed);  
         
@@ -107,7 +107,7 @@ contract CoffeeSupplyChain is Ownable
                                 string _cropVariety,
                                 string _temperatureUsed,
                                 string _humidity) 
-                                public isValidPerformer(_batchNo,'HARVESTER') returns(bool) {
+                                public isValidPerformer(_batchNo,'THU_HOACH') returns(bool) {
                                     
         /* Call Storage Contract */
         bool status = supplyChainStorage.setHarvesterData(_batchNo, _cropVariety, _temperatureUsed, _humidity);  
@@ -152,7 +152,7 @@ contract CoffeeSupplyChain is Ownable
                                 string _shipNo,
                                 uint256 _estimateDateTime,
                                 uint256 _exporterId) 
-                                public isValidPerformer(_batchNo,'EXPORTER') returns(bool) {
+                                public isValidPerformer(_batchNo,'XUAT_KHO') returns(bool) {
                                     
         /* Call Storage Contract */
         bool status = supplyChainStorage.setExporterData(_batchNo, _quantity, _destinationAddress, _shipName,_shipNo, _estimateDateTime,_exporterId);  
@@ -202,7 +202,7 @@ contract CoffeeSupplyChain is Ownable
                                 string _warehouseName,
                                 string _warehouseAddress,
                                 uint256 _importerId) 
-                                public isValidPerformer(_batchNo,'IMPORTER') returns(bool) {
+                                public isValidPerformer(_batchNo,'NHAP_KHO') returns(bool) {
                                     
         /* Call Storage Contract */
         bool status = supplyChainStorage.setImporterData(_batchNo, _quantity, _shipName, _shipNo, _transportInfo,_warehouseName,_warehouseAddress,_importerId);  
@@ -249,7 +249,7 @@ contract CoffeeSupplyChain is Ownable
                               string _internalBatchNo,
                               uint256 _packageDateTime,
                               string _processorName,
-                              string _processorAddress) public isValidPerformer(_batchNo,'PROCESSOR') returns(bool) {
+                              string _processorAddress) public isValidPerformer(_batchNo,'PHAN_PHOI') returns(bool) {
                                     
         /* Call Storage Contract */
         bool status = supplyChainStorage.setProcessorData(_batchNo, 

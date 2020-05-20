@@ -25,6 +25,8 @@ $(document).ready(function(){
 $(window).on("coinbaseReady", function ()
 {
     getUser(globUserContract, function(data){      
+      
+      if(data.role == "ENTERPRISE") window.location = "admin.php";
 
       globCurrentUser = data ;
 
@@ -427,12 +429,12 @@ function buildCultivationTable(finalEvents)
         var transactionHash = elem.transactionHash;
         var tr = "";
         
-        if (elem.status == "FARM_INSPECTION") {
+        if (elem.status == "NONG_TRAI") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
                   `;
                   
-              if(globCurrentUser.role == "FARM_INSPECTION")
+              if(globCurrentUser.role == "NONG_TRAI")
               {
                 tr+=`<td>
                           <span class="label label-inverse font-weight-100">
@@ -451,15 +453,14 @@ function buildCultivationTable(finalEvents)
               <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
               <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
               <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
-              <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
           </tr>`;
 
-        } else if (elem.status == "HARVESTER") {
+        } else if (elem.status == "THU_HOACH") {
           tr = `<tr>
                     <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     `;
-                  if(globCurrentUser.role == "HARVESTER")
+                  if(globCurrentUser.role == "THU_HOACH")
                   {
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
@@ -477,17 +478,16 @@ function buildCultivationTable(finalEvents)
                 <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                 <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                 <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
-                <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
             </tr>`;
 
-        } else if (elem.status == "EXPORTER") {
+        } else if (elem.status == "XUAT_KHO") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;
                   
-                  if(globCurrentUser.role == "EXPORTER")
+                  if(globCurrentUser.role == "XUAT_KHO")
                   {
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
@@ -504,9 +504,8 @@ function buildCultivationTable(finalEvents)
               tr+=`  
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
-                    <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
-        } else if (elem.status == "IMPORTER") {
+        } else if (elem.status == "NHAP_KHO") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -514,7 +513,7 @@ function buildCultivationTable(finalEvents)
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;  
 
-                  if(globCurrentUser.role == "IMPORTER")
+                  if(globCurrentUser.role == "NHAP_KHO")
                   {
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
@@ -529,9 +528,8 @@ function buildCultivationTable(finalEvents)
                   } 
 
               tr+=` <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
-                    <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
-        } else if (elem.status == "PROCESSOR") {
+        } else if (elem.status == "PHAN_PHOI") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -540,7 +538,7 @@ function buildCultivationTable(finalEvents)
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;
                   
-                  if(globCurrentUser.role == "PROCESSOR")
+                  if(globCurrentUser.role == "PHAN_PHOI")
                   {
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
@@ -554,7 +552,6 @@ function buildCultivationTable(finalEvents)
                      tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
                   }  
                 tr+=`    
-                    <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
         } else if (elem.status == "DONE") {
             tr = `<tr>
@@ -566,7 +563,6 @@ function buildCultivationTable(finalEvents)
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;  
                 tr+=`    
-                    <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
         }
             

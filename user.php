@@ -68,7 +68,6 @@
                                             <th>Xuất kho</th>
                                             <th>Nhập kho</th>
                                             <th>Phân phối</th>
-                                            <th>Chi tiết</th>
                                             
                                         </tr>
                                     </thead>
@@ -103,11 +102,11 @@
                                                     <label class="control-label" for="role">Vai trò </label>
                                                     <select class="form-control" id="role" disabled="true" name="role">
                                                         <option value="">Lựa chọn vai trò</option>
-                                                        <option value="FARM_INSPECTION">Nông trại</option>
-                                                        <option value="HARVESTER">Thu hoạch</option>
-                                                        <option value="EXPORTER">Xuất kho</option>
-                                                        <option value="IMPORTER">Nhập kho</option>
-                                                        <option value="PROCESSOR">Chế biến</option>
+                                                        <option value="NONG_TRAI">Nông trại</option>
+                                                        <option value="THU_HOACH">Thu hoạch</option>
+                                                        <option value="XUAT_KHO">Xuất kho</option>
+                                                        <option value="NHAP_KHO">Nhập kho</option>
+                                                        <option value="PHAN_PHOI">Chế biến</option>
                                                     </select>    
                                                 </div>
                                                 <div class="form-group">

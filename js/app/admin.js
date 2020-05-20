@@ -152,7 +152,7 @@ function buildCultivationTable(finalEvents) {
       transactionHash +
       `" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>`;
 
-    if (elem.status == 'FARM_INSPECTION') {
+    if (elem.status == 'NONG_TRAI') {
       tr =
         `<tr>
             		` +
@@ -168,7 +168,7 @@ function buildCultivationTable(finalEvents) {
         commActionTd +
         `
                 </tr>`;
-    } else if (elem.status == 'HARVESTER') {
+    } else if (elem.status == 'THU_HOACH') {
       tr =
         `<tr>
                     ` +
@@ -184,7 +184,7 @@ function buildCultivationTable(finalEvents) {
         commActionTd +
         `
                 </tr>`;
-    } else if (elem.status == 'EXPORTER') {
+    } else if (elem.status == 'XUAT_KHO') {
       tr =
         `<tr>
                     ` +
@@ -200,7 +200,7 @@ function buildCultivationTable(finalEvents) {
         commActionTd +
         `
                 </tr>`;
-    } else if (elem.status == 'IMPORTER') {
+    } else if (elem.status == 'NHAP_KHO') {
       tr =
         `<tr>
                     ` +
@@ -216,7 +216,7 @@ function buildCultivationTable(finalEvents) {
         commActionTd +
         `
                 </tr>`;
-    } else if (elem.status == 'PROCESSOR') {
+    } else if (elem.status == 'PHAN_PHOI') {
       tr =
         `<tr>
                     ` +

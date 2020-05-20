@@ -560,6 +560,9 @@ hr {
 .label-primary {
   background-color: #ab8ce4;
 }
+.label-secondary{
+  background-color: #6c757d;
+}
 .label-purple {
   background-color: #9675ce;
 }
@@ -3868,7 +3871,7 @@ table.focus-on tbody tr.focused th {
 .login-box {
   background: #fff;
   width: 400px;
-  margin: 10% auto 0;
+  margin: 30px auto;
   border-radius: 5%;
   /* border-radius */
   -webkit-border-radius: 20px;
