@@ -1,3 +1,5 @@
+var globCurrentUser = false;
+
 $(window).on('coinbaseReady', function () {
   getUserEvents(globUserContract);
   getCultivationEvents(globMainContract);
@@ -259,3 +261,7 @@ function buildCultivationTable(finalEvents) {
 function getBatchStatus(contractRef, batchNo) {
   return contractRef.methods.getNextAction(batchNo).call();
 }
+
+$(window).on('coinbaseReady', function () {
+  getUserEvents(globUserContract);
+});

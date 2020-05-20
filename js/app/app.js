@@ -7,6 +7,7 @@ var globIcoAddress = {
 	Storage: '0x50064ce16a8a5176052fb83b5a6ebd1f043a3a4b',
 };
 
+var globSuperAdmin = "0x28239499ecbdf4ecf89f12ab44f17e52352238ed";
 var globAdminAddress = '';
 var globMainContract = false;
 var globUserContract = false;
@@ -35,12 +36,20 @@ window.addEventListener('load', function () {
 		var currentPath = window.location.pathname;
 		var tmpStack = currentPath.split('/');
 		var currentPanel = tmpStack.pop();
-
+		this.console.log(currentPanel);
 		if (currentPanel == "admin.php") {
 			getUser(globUserContract, function (data) {
-				if (data.role != "DOANH_NGHIEP") window.location = "index.php";
+				if(data == undefined) window.location = "index.php";
+				if(data.role != "DOANH_NGHIEP") window.location = "index.php";
 			});
 			globAdminAddress = address;
+		} else if (currentPanel == "admin-panel.php") {
+			this.console.log(address, globSuperAdmin);
+
+			if(address != globSuperAdmin) {
+				window.location = "index.php";
+			}
+			globAdminAddress = globSuperAdmin;
 		}
 	});
 
@@ -408,6 +417,19 @@ $('#userFormClick').click(function () {
 });
 
 /*Edit User Model Form*/
+function getUser(contractRef,callback)
+{
+   contractRef.methods.getUser(globCoinbase).call(function (error, result) {
+        if(error){
+            alert("Unable to get User" + error);    
+        }
+        newUser = result;
+        if (callback)
+        {
+            callback(newUser);
+        }        
+    });
+}
 function openEditUser(ref) {
 	var userAddress = $(ref).attr('data-userAddress');
 	startLoader();

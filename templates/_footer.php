@@ -68,6 +68,12 @@
                 <script type="text/javascript" src="js/app/user.js"></script>
             <?php
         }
+        elseif(isset($_SERVER['SCRIPT_NAME']) && strpos($_SERVER['SCRIPT_NAME'], "admin-panel.php") !== false)
+        {
+            ?>
+                <script type="text/javascript" src="js/app/admin-panel.js"></script>
+            <?php
+        }
     ?>
     
     <script type="text/javascript" src="js/app/batch-details.js"></script>
