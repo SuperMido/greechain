@@ -3868,7 +3868,7 @@ table.focus-on tbody tr.focused th {
 .login-box {
   background: #fff;
   width: 400px;
-  margin: 10% auto 0;
+  margin: 30px auto;
   border-radius: 5%;
   /* border-radius */
   -webkit-border-radius: 20px;
