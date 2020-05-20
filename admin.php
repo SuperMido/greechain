@@ -65,11 +65,13 @@
                                             <th>Mã QR</th>
                                             <th>Nông trại</th>
                                             <th>Thu hoạch</th>
-                                            <th>Xuất khẩu</th>
-                                            <th>Nhập khẩu</th>
-                                            <th>Xử lý</th>
+                                            <th>Xuất kho</th>
+                                            <th>Nhập kho</th>
+                                            <th>Chế biến</th>
                                             <th>Chi tiết</th>
+                                            <th>Nhà phân phối</th>
                                             <th>Số phản hồi</th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -143,16 +145,16 @@
                                             <td><span class="label label-success font-weight-100">THU_HOACH</span></td>
                                         </tr>
                                         <tr>
-                                            <td>Xuất khẩu</td>
-                                            <td><span class="label label-warning font-weight-100">XUAT_KHAU</span></td>
+                                            <td>Xuất kho</td>
+                                            <td><span class="label label-warning font-weight-100">XUAT_KHO</span></td>
                                         </tr>
                                         <tr>
-                                            <td>Nhập khẩu</td>
-                                            <td><span class="label label-danger font-weight-100">NHAP_KHAU</span></td>
+                                            <td>Nhập kho</td>
+                                            <td><span class="label label-danger font-weight-100">NHAP_KHO</span></td>
                                         </tr>
                                         <tr>
-                                            <td>Xử lý</td>
-                                            <td><span class="label label-primary font-weight-100">XU_KHAU</span></td>
+                                            <td>Chế biến</td>
+                                            <td><span class="label label-primary font-weight-100">CHE_BIEN</span></td>
                                         </tr>
                                         <tr>
                                             <td>Phân phối</td>

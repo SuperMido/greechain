@@ -8,12 +8,12 @@
   800
 );
 @import url(
-  https://fonts.googleapis.com/css?family=Roboto:100,
+  https://fonts.googleapis.com/css2?family=Roboto:wght@100,
   300,
   400,
   500,
   700,
-  900
+  900&display=swap
 );
 @import 'spinners.css';
 .preloader {
@@ -913,7 +913,7 @@ pre {
   width: 120px;
   float: right;
 }
-.top-right-part button{
+.top-right-part button {
   border-radius: 10px;
 }
 .top-left-part a {
