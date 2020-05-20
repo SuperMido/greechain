@@ -560,6 +560,9 @@ hr {
 .label-primary {
   background-color: #ab8ce4;
 }
+.label-secondary{
+  background-color: #6c757d;
+}
 .label-purple {
   background-color: #9675ce;
 }

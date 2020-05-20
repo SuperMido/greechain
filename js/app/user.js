@@ -25,6 +25,8 @@ $(document).ready(function(){
 $(window).on("coinbaseReady", function ()
 {
     getUser(globUserContract, function(data){      
+      
+      if(data.role == "ENTERPRISE") window.location = "admin.php";
 
       globCurrentUser = data ;
 
