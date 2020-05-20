@@ -2,9 +2,9 @@ var globIcoAddress = {
 	/*'old-CoffeeMain': "0xfA171Cda184d815D20a318fCe9920AafdC04934e",
 		  'old-CoffeeUser': "0x26d723acFe39f93A9702592dD9371851f81cF59F",*/
 
-	CoffeeMain: '0x4d833ba3f4e0ea0898b2721f3e3c70f442e0fa61',
+	CoffeeMain: '0xba284bad6d09c3280475e9d53953a14d2cab0c16',
 	CoffeeUser: '0x9ff26b848a83afff24f6104d7ecc785ae879f467',
-	Storage: '0x417fec319dcb320db18ba73cf0f0269d4bddb8fe',
+	Storage: '0x11e5a91ec81190cc597327e51d2a6798f74b1be8',
 };
 
 var globAdminAddress = '';
