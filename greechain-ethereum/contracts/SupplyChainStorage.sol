@@ -213,7 +213,7 @@ contract SupplyChainStorage is SupplyChainStorageOwnable {
         
         batchBasicDetails[batchNo] = basicDetailsData;
         
-        nextAction[batchNo] = 'FARM_INSPECTION';   
+        nextAction[batchNo] = 'NONG_TRAI';   
         
         
         return batchNo;
@@ -230,7 +230,7 @@ contract SupplyChainStorage is SupplyChainStorageOwnable {
         
         batchFarmInspector[batchNo] = farmInspectorData;
         
-        nextAction[batchNo] = 'HARVESTER'; 
+        nextAction[batchNo] = 'THU_HOACH'; 
         
         return true;
     }
@@ -255,7 +255,7 @@ contract SupplyChainStorage is SupplyChainStorageOwnable {
         
         batchHarvester[batchNo] = harvesterData;
         
-        nextAction[batchNo] = 'EXPORTER'; 
+        nextAction[batchNo] = 'XUAT_KHO'; 
         
         return true;
     }
@@ -288,7 +288,7 @@ contract SupplyChainStorage is SupplyChainStorageOwnable {
         
         batchExporter[batchNo] = exporterData;
         
-        nextAction[batchNo] = 'IMPORTER'; 
+        nextAction[batchNo] = 'NHAP_KHO'; 
         
         return true;
     }
@@ -339,7 +339,7 @@ contract SupplyChainStorage is SupplyChainStorageOwnable {
         
         batchImporter[batchNo] = importerData;
         
-        nextAction[batchNo] = 'PROCESSOR'; 
+        nextAction[batchNo] = 'PHAN_PHOI'; 
         
         return true;
     }

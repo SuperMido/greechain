@@ -304,15 +304,15 @@ function buildUserTable(globUserData) {
 	$(globUserData).each(function (index, data) {
 		var role = data.role;
 
-		if (role == 'FARM_INSPECTION') {
+		if (role == 'NONG_TRAI') {
 			roleClass = 'info';
-		} else if (role == 'HARVESTER') {
+		} else if (role == 'THU_HOACH') {
 			roleClass = 'success';
-		} else if (role == 'EXPORTER') {
+		} else if (role == 'XUAT_KHO') {
 			roleClass = 'warning';
-		} else if (role == 'IMPORTER') {
+		} else if (role == 'NHAP_KHO') {
 			roleClass = 'danger';
-		} else if (role == 'PROCESSOR') {
+		} else if (role == 'PHAN_PHOI') {
 			roleClass = 'primary';
 		} else if (role == 'ENTERPRISE') {
 			roleClass = 'secondary';

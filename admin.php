@@ -255,11 +255,11 @@
                                         <label class="control-label" for="userRoles">Vai trò người dùng <i class="red">*</i></label>
                                         <select class="form-control" id="userRoles" name="userRoles" data-parsley-required="true">
                                             <option value="">Chọn vai trò</option>
-                                            <option value="FARM_INSPECTION">Nông trại</option>
-                                            <option value="HARVESTER">Thu hoạch</option>
-                                            <option value="EXPORTER">Xuất khẩu</option>
-                                            <option value="IMPORTER">Nhập khẩu</option>
-                                            <option value="PROCESSOR">Phân phối</option>
+                                            <option value="NONG_TRAI">Nông trại</option>
+                                            <option value="THU_HOACH">Thu hoạch</option>
+                                            <option value="XUAT_KHO">Xuất khẩu</option>
+                                            <option value="NHAP_KHO">Nhập khẩu</option>
+                                            <option value="PHAN_PHOI">Phân phối</option>
                                         </select>    
                                     </div>
                                     <div class="form-group">
