@@ -17,7 +17,7 @@
                 </div>
                 <div class="top-right-part">
 
-                    <button class="btn btn-outline-light"><a class="text-light" href="index.php">Logout</a></button>
+                    <button class="btn btn-outline-light"><a class="text-light" href="index.php">Đăng xuất</a></button>
                 </div>
             </div>
                     </div>

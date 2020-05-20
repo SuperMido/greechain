@@ -16,7 +16,7 @@
                     <div class="form-group  text-center">
                         <div class="col-xs-12">
                            <h4><b>Chào mừng đến với công nghệ quản lý cà phê hoàn toàn mới !</b></h4>
-                            <h6>Đi tiên phong áp dụng kĩ thuật Blockchain vào ngành nông nghiệp</h6>
+                            <h6>Hệ thống website áp dụng kỹ thuật blockchain vào Nông nghiệp</h6>
                         </div>
                     </div>
                     <div class="form-group text-center">
