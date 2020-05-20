@@ -200,7 +200,7 @@
                             <fieldset style="border:0;">
                                 <div class="form-group">
                                     <label class="control-label" for="farmerRegistrationNo">Tên lô hàng<i class="red">*</i></label>
-                                    <input type="text" class="form-control" id="farmerRegistrationNo" name="farmerRegistrationNo" placeholder="Tên hô hàng..." data-parsley-required="true">
+                                    <input type="text" class="form-control" id="farmerRegistrationNo" name="farmerRegistrationNo" placeholder="Tên lô hàng..." data-parsley-required="true">
                                 </div> 
                                 <div class="form-group">
                                     <label class="control-label" for="farmerName">Chi tiết <i class="red">*</i></label>
