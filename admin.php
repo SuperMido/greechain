@@ -67,16 +67,15 @@
                                             <th>Thu hoạch</th>
                                             <th>Xuất kho</th>
                                             <th>Nhập kho</th>
-                                            <th>Chế biến</th>
-                                            <th>Chi tiết</th>
                                             <th>Nhà phân phối</th>
-                                            <th>Số phản hồi</th>
+                                            <th>Chi tiết</th>
+                                            
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                          <tr>
-                                             <td colspan="7" align="center">Dữ liệu không có sẵn</td>
+                                             <td colspan="7" text-align="center">Dữ liệu không có sẵn</td>
                                          </tr>   
                                     </tbody>
                                 </table>
@@ -212,15 +211,15 @@
                                     <input type="text" class="form-control" id="farmerName" name="farmerName" placeholder="Chi tiết..." data-parsley-required="true">
                                 </div>                              
                                 <div class="form-group">
-                                    <label class="control-label" for="farmerAddress"># <i class="red">*</i></label>
+                                    <label class="control-label" for="farmerAddress">Địa chỉ <i class="red">*</i></label>
                                     <textarea class="form-control" id="farmerAddress" name="farmerAddress" placeholder="#" data-parsley-required="true"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" for="exporterName"># <i class="red">*</i></label>
+                                    <label class="control-label" for="exporterName">Tên đơn vị xuất kho <i class="red">*</i></label>
                                     <input type="text" class="form-control" id="exporterName" name="exporterName" placeholder="#" data-parsley-required="true">
                                 </div> 
                                 <div class="form-group">
-                                    <label class="control-label" for="importerName">#<i class="red">*</i></label>
+                                    <label class="control-label" for="importerName">Tên đơn vị nhập kho<i class="red">*</i></label>
                                     <input type="text" class="form-control" id="importerName" name="importerName" placeholder="#" data-parsley-required="true">
                                 </div> 
                             </fieldset>

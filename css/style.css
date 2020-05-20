@@ -782,6 +782,8 @@ pre {
 }
 .table-responsive {
   overflow-y: hidden;
+  align-items: center;
+  text-align: center;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {

@@ -32,14 +32,14 @@
                             </div>
                             <div class="timeline-panel" id="cultivationSection">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Cultivation</h4>
+                                    <h4 class="timeline-title">Thông tin nông trại</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                     <table class="table activityData table-responsive" >
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -51,14 +51,14 @@
                             </div>
                             <div class="timeline-panel" id="farmInspectionSection">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Farm-Inspector</h4>
+                                    <h4 class="timeline-title">Thông tin trồng</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                     <table class="table activityData table-responsive">
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -70,14 +70,14 @@
                             </div>
                             <div class="timeline-panel" id="harvesterSection">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Harvester</h4>
+                                    <h4 class="timeline-title">Thông tin thu hoạch</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                     <table class="table activityData table-responsive" >
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>        
                                 </div>
@@ -89,14 +89,14 @@
                             </div>
                             <div class="timeline-panel" id="exporterSection"> 
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Exporter</h4>
+                                    <h4 class="timeline-title">Thông tin xuất kho</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                     <table class="table activityData table-responsive">
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>  
                                 </div>
@@ -108,14 +108,14 @@
                             </div>
                             <div class="timeline-panel" id="importerSection">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Importer</h4>
+                                    <h4 class="timeline-title">Thông tin nhập kho</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                    <table class="table activityData table-responsive" >
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -127,14 +127,14 @@
                             </div>
                             <div class="timeline-panel" id="processorSection">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Processor</h4>
+                                    <h4 class="timeline-title">Thông tin nhà phân phối</h4>
                                     <p><small class="text-muted text-success activityDateTime"></small> </p>
                                     <span class="activityQrCode"></span>
                                 </div>
                                 <div class="timeline-body">
                                     <table class="table activityData table-responsive" >
                                         <tr>
-                                            <td colspan="2"><p>Information Not Avilable</p></td>
+                                            <td colspan="2"><p>Thông tin không khả dụng</p></td>
                                         </tr>
                                     </table>
                                 </div>

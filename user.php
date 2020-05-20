@@ -67,7 +67,7 @@
                                             <th>Thu hoạch</th>
                                             <th>Xuất kho</th>
                                             <th>Nhập kho</th>
-                                            <th>Chế biến</th>
+                                            <th>Phân phối</th>
                                             <th>Chi tiết</th>
                                             
                                         </tr>
