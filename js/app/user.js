@@ -437,54 +437,54 @@ function buildCultivationTable(finalEvents)
                 tr+=`<td>
                           <span class="label label-inverse font-weight-100">
                           <a class="popup-with-form" href="#farmInspectionForm" onclick="editActivity('`+batchNo+`')">
-                            <span class="label label-inverse font-weight-100">Update</span>
+                            <span class="label label-inverse font-weight-100"><strong>Cập nhật</strong></span>
                           </a>
                       </td>`;
               }
               else
               {
-                 tr+=`<td><span class="label label-warning font-weight-100">Processing</span> </td>`;
+                 tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
               }
 
                 
-          tr+=`<td><span class="label label-danger font-weight-100">Not Available</span> </td>
-              <td><span class="label label-danger font-weight-100">Not Available</span> </td>
-              <td><span class="label label-danger font-weight-100">Not Available</span> </td>
-              <td><span class="label label-danger font-weight-100">Not Available</span> </td>
+          tr+=`<td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+              <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+              <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+              <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
               <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
           </tr>`;
 
         } else if (elem.status == "HARVESTER") {
           tr = `<tr>
                     <td>`+batchNo+`</td>
-                    <td><span class="label label-success font-weight-100">Completed</span></td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     `;
                   if(globCurrentUser.role == "HARVESTER")
                   {
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
                               <a class="popup-with-form" href="#harvesterForm" onclick="editActivity('`+batchNo+`')">
-                                <span class="label label-inverse font-weight-100">Update</span>
+                                <span class="label label-inverse font-weight-100"><strong>Cập nhật</strong></span>
                               </a>
                           </td>`;
                   }
                   else
                   {
-                     tr+=`<td><span class="label label-warning font-weight-100">Processing</span> </td>`;
+                     tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
                   }        
 
             tr+=`
-                <td><span class="label label-danger font-weight-100">Not Available</span> </td>
-                <td><span class="label label-danger font-weight-100">Not Available</span> </td>
-                <td><span class="label label-danger font-weight-100">Not Available</span> </td>
+                <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                 <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
             </tr>`;
 
         } else if (elem.status == "EXPORTER") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
-                    <td><span class="label label-success font-weight-100">Completed</span></td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;
                   
                   if(globCurrentUser.role == "EXPORTER")
@@ -492,26 +492,26 @@ function buildCultivationTable(finalEvents)
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
                               <a class="popup-with-form" href="#exporterForm" onclick="editActivity('`+batchNo+`')">
-                                <span class="label label-inverse font-weight-100">Update</span>
+                                <span class="label label-inverse font-weight-100"><strong>Cập nhật</strong></span>
                               </a>
                           </td>`;
                   }
                   else
                   {
-                     tr+=`<td><span class="label label-warning font-weight-100">Processing</span> </td>`;
+                     tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
                   } 
 
               tr+=`  
-                    <td><span class="label label-danger font-weight-100">Not Available</span> </td>
-                    <td><span class="label label-danger font-weight-100">Not Available</span> </td>
+                    <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                    <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
         } else if (elem.status == "IMPORTER") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
-                    <td><span class="label label-success font-weight-100">Completed</span></td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;  
 
                   if(globCurrentUser.role == "IMPORTER")
@@ -519,25 +519,25 @@ function buildCultivationTable(finalEvents)
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
                               <a class="popup-with-form" href="#importerForm" onclick="editActivity('`+batchNo+`')">
-                                <span class="label label-inverse font-weight-100">Update</span>
+                                <span class="label label-inverse font-weight-100"><strong>Cập nhật</strong></span>
                               </a>
                           </td>`;
                   }
                   else
                   {
-                     tr+=`<td><span class="label label-warning font-weight-100">Processing</span> </td>`;
+                     tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
                   } 
 
-              tr+=` <td><span class="label label-danger font-weight-100">Not Available</span> </td>
+              tr+=` <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
                 </tr>`;
         } else if (elem.status == "PROCESSOR") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
-                    <td><span class="label label-success font-weight-100">Completed</span></td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;
                   
                   if(globCurrentUser.role == "PROCESSOR")
@@ -545,13 +545,13 @@ function buildCultivationTable(finalEvents)
                     tr+=`<td>
                               <span class="label label-inverse font-weight-100">
                               <a class="popup-with-form" href="#processingForm" onclick="editActivity('`+batchNo+`')">
-                                <span class="label label-inverse font-weight-150">Update</span>
+                                <span class="label label-inverse font-weight-100"><strong>Cập nhật</strong></span>
                               </a>
                           </td>`;
                   }
                   else
                   {
-                     tr+=`<td><span class="label label-warning font-weight-100">Processing</span> </td>`;
+                     tr+=`<td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>`;
                   }  
                 tr+=`    
                     <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>
@@ -559,11 +559,11 @@ function buildCultivationTable(finalEvents)
         } else if (elem.status == "DONE") {
             tr = `<tr>
                     <td>`+batchNo+`</td>
-                    <td><span class="label label-success font-weight-100">Completed</span></td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
-                    <td><span class="label label-success font-weight-100">Completed</span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;  
                 tr+=`    
                     <td><a href="view-batch.php?batchNo=`+batchNo+`&txn=`+transactionHash+`" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>

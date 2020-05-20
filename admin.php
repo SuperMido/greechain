@@ -76,7 +76,7 @@
                                     </thead>
                                     <tbody>
                                          <tr>
-                                             <td colspan="7" align="center">Dữ liệu không có sẵn</td>
+                                             <td colspan="7" text-align="center">Dữ liệu không có sẵn</td>
                                          </tr>   
                                     </tbody>
                                 </table>
