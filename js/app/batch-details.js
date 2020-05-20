@@ -174,30 +174,30 @@ function buildCultivationBlock(result)
 
 	if(registrationNo!='' && farmerName!='' && farmAddress!='' && exporterName!='' && importerName!=''){
 		cultivationData.html =  `<tr>
-                                <td><b>Registration No:</b></td>
+                                <td><b>Mã nông trại:</b></td>
                                 <td>`+registrationNo+` <i class="fa fa-check-circle verified_info"></i></td>
                             </tr>
                             <tr>
-                                <td><b>Farmer Name:</b></td>
+                                <td><b>Tên nông trại:</b></td>
                                 <td>`+farmerName+` <i class="fa fa-check-circle verified_info"></i></td>
                             </tr>
                             <tr>
-                                <td><b>Farm Address:</b></td>
+                                <td><b>Địa chỉ nông trại:</b></td>
                                 <td>`+farmAddress+` <i class="fa fa-check-circle verified_info"></i></td>
                             </tr>
                             <tr>
-                                <td><b>Exporter Name:</b></td>
+                                <td><b>Đơn vị xuất kho:</b></td>
                                 <td>`+exporterName+` <i class="fa fa-check-circle verified_info"></i></td>
                             </tr>
                             <tr>
-                                <td><b>Importer Name:</b></td>
+                                <td><b>Đơn vị nhập kho:</b></td>
                                 <td>`+importerName+` <i class="fa fa-check-circle verified_info"></i></td>
                             </tr>`;
 
         cultivationData.isDataAvail = true;                    
     }else{
     	cultivationData.html = ` <tr>
-                                    <td colspan="2"><p>Information Not Avilable</p></td>
+                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
                             </tr>`;
 
         cultivationData.isDataAvail = false;                                        
@@ -214,21 +214,21 @@ function buildFarmInspectionBlock(result){
 
 	if(coffeeFamily!='' && typeOfSeed!='' && fertilizerUsed!=''){
 		farmInspactorData.html =  `<tr>
-                                    <td><b>Coffee Family:</b></td>
+                                    <td><b>Loại cà phê:</b></td>
                                     <td>`+coffeeFamily+` <i class="fa fa-check-circle verified_info"></i></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Type of Seeds:</b></td>
+                                    <td><b>Loại hạt giống:</b></td>
                                     <td>`+typeOfSeed+` <i class="fa fa-check-circle verified_info"></i></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Fertilizer Used:</b></td>
+                                    <td><b>Loại phân bón đã sử dụng:</b></td>
                                     <td>`+fertilizerUsed+` <i class="fa fa-check-circle verified_info"></i></td>
                                   </tr>`;
         farmInspactorData.isDataAvail = true;                          
     }else{
     	farmInspactorData.html = `<tr>
-	                                    <td colspan="2"><p>Information Not Avilable</p></td>
+	                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
 	                            </tr>`;
 	    farmInspactorData.isDataAvail = false;                        
     } 
@@ -244,21 +244,21 @@ function buildHarvesterBlock(result){
 
 	if(cropVariety!='' && temperatureUsed!='' && humidity!=''){
 		harvesterData.html =  `<tr>
-                                <td><b>Crop Variety:</b></td>
+                                <td><b>Mật độ trồng:</b></td>
                                 <td>`+cropVariety+` <i class="fa fa-check-circle verified_info"></i></td>
                               </tr>
                               <tr>
-                                <td><b>Temperature Used:</b></td>
+                                <td><b>Nhiệt độ khi thu hoạch:</b></td>
                                 <td>`+temperatureUsed+`&#x2109; <i class="fa fa-check-circle verified_info"></i></td>
                               </tr>
                               <tr>
-                                <td><b>Humidity:</b></td>
+                                <td><b>Độ ẩm khi thu hoạch:</b></td>
                                 <td>`+humidity+`% <i class="fa fa-check-circle verified_info"></i></td>
                               </tr>`;
         harvesterData.isDataAvail = true;                      
     }else{
     	harvesterData.html = `<tr>
-                                    <td colspan="2"><p>Information Not Avilable</p></td>
+                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
                         </tr>`;
         harvesterData.isDataAvail = false;                
     }    
@@ -281,37 +281,37 @@ function buildExporterBlock(result){
     var departureDateTime = new Date(result.departureDateTime * 1000).toLocaleString();
     var estimateDateTime = new Date(result.estimateDateTime * 1000).toLocaleString();
     exporterData.html =  `<tr>
-                            <td><b>Quantity:</b></td>
-                            <td>`+quantity+` (in Kg) <i class="fa fa-check-circle verified_info"></i></td>
+                            <td><b>Sản lượng:</b></td>
+                            <td>`+quantity+` (đơn vị tính: Kg) <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Destination Address:</b></td>
+                            <td><b>Địa chỉ chuyển đến:</b></td>
                             <td>`+destinationAddress+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Ship Name:</b></td>
+                            <td><b>Tên đơn vị vận chuyển:</b></td>
                             <td>`+shipName+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Ship No:</b></td>
+                            <td><b>Mã đơn vị vận chuyển:</b></td>
                             <td>`+shipNo+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Departure Date Time:</b></td>
+                            <td><b>Thời gian bắt đầu vận chuyển:</b></td>
                             <td>`+departureDateTime+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Estimate Date Time:</b></td>
+                            <td><b>Thời gian đến dự tính:</b></td>
                             <td>`+estimateDateTime+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Exporter Id:</b></td>
+                            <td><b>Mã đơn vị xuất kho:</b></td>
                             <td>`+exporterId+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>`;
         exporterData.isDataAvail = true;                  
 	}else{
     	exporterData.html = ` <tr>
-                                    <td colspan="2"><p>Information Not Avilable</p></td>
+                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
                         </tr>`;
         exporterData.isDataAvail = false;                
     }   
@@ -334,41 +334,41 @@ function buildImporterBlock(result){
 		
     var arrivalDateTime = new Date(result.arrivalDateTime * 1000).toLocaleString();
     importerData.html =  `<tr>
-                            <td><b>Quantity:</b></td>
-                            <td>`+quantity+` (in Kg) <i class="fa fa-check-circle verified_info"></i></td>
+                            <td><b>Sản lượng:</b></td>
+                            <td>`+quantity+` (đơn vị tính: Kg) <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Ship Name:</b></td>
+                            <td><b>Tên đơn vị vận chuyển:</b></td>
                             <td>`+shipName+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Ship No:</b></td>
+                            <td><b>Mã đơn vị vận chuyển:</b></td>
                             <td>`+shipNo+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Arrival Date Time:</b></td>
+                            <td><b>Thời điểm nhận:</b></td>
                             <td>`+arrivalDateTime+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Transport Info:</b></td>
+                            <td><b>Thông tin vận chuyển:</b></td>
                             <td>`+transportInfo+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Warehouse Name:</b></td>
+                            <td><b>Tên kho:</b></td>
                             <td>`+warehouseName+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Warehouse Address:</b></td>
+                            <td><b>Địa chỉ kho:</b></td>
                             <td>`+warehouseAddress+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Importer Id:</b></td>
+                            <td><b>Mã đơn vị nhập kho:</b></td>
                             <td>`+importerId+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>`;
         importerData.isDataAvail = true;                  
     }else{
     	importerData.html = ` <tr>
-                                    <td colspan="2"><p>Information Not Avilable</p></td>
+                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
                         </tr>`;
         importerData.isDataAvail = false;                
     }
@@ -391,38 +391,38 @@ function buildProcessorBlock(result){
     var packageDateTime = new Date(result.packageDateTime * 1000).toLocaleString();
 
     processorData.html =  `<tr>
-                            <td><b>Quantity:</b></td>
-                            <td>`+result.quantity+` (in Kg) <i class="fa fa-check-circle verified_info"></i></td>
+                            <td><b>Sản lượng:</b></td>
+                            <td>`+result.quantity+` (đơn vị tính: Kg) <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Temperature:</b></td>
+                            <td><b>Nhiệt độ:</b></td>
                             <td>`+result.temperature+`&#x2109; <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Rosting Duration:</b></td>
+                            <td><b>Thời lượng rang:</b></td>
                             <td>`+result.rostingDuration+` in seconds <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Processed Batch No:</b></td>
+                            <td><b>Mã lô hàng:</b></td>
                             <td>`+result.internalBatchNo+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Package Date Time:</b></td>
+                            <td><b>Thời điểm đóng gói:</b></td>
                             <td>`+new Date(result.packageDateTime * 1000).toLocaleString() +` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Processor Name:</b></td>
+                            <td><b>Đơn vị chế biến:</b></td>
                             <td>`+result.processorName+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>
-                            <td><b>Warehouse Address:</b></td>
+                            <td><b>Địa chỉ kho:</b></td>
                             <td>`+result.processorAddress+` <i class="fa fa-check-circle verified_info"></i></td>
                           </tr>
                           <tr>`;
         processorData.isDataAvail = true;                  
     }else{
     	processorData.html = ` <tr>
-                                    <td colspan="2"><p>Information Not Avilable</p></td>
+                                    <td colspan="2"><p>Thông tin không khả dụng</p></td>
                         </tr>`;
         processorData.isDataAvail = false;                
     }    
