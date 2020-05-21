@@ -36,7 +36,10 @@ window.addEventListener('load', function () {
 		var currentPath = window.location.pathname;
 		var tmpStack = currentPath.split('/');
 		var currentPanel = tmpStack.pop();
-		this.console.log(currentPanel);
+		globCoinbase = address;
+		$('#currentUserAddress').html(globCoinbase);
+		$(window).trigger('coinbaseReady');
+
 		if (currentPanel == "admin.php") {
 			getUser(globUserContract, function (data) {
 				if(data == undefined) window.location = "index.php";
@@ -53,9 +56,8 @@ window.addEventListener('load', function () {
 		}
 	});
 
-
-
 	updateLoginAccountStatus();
+
 	/* setInterval(function () {
 			  updateLoginAccountStatus();
 		  }, 500); */
@@ -84,20 +86,7 @@ function updateLoginAccountStatus() {
 			$('#currentUserAddress').html(
 				'0x0000000000000000000000000000000000000000'
 			);
-		} else {
-			initAccountDetails();
 		}
-	});
-}
-
-function initAccountDetails() {
-	/*
-	 * Get Current wallet account address
-	 */
-	getCurrentAccountAddress((address) => {
-		globCoinbase = address;
-		$('#currentUserAddress').html(globCoinbase);
-		$(window).trigger('coinbaseReady');
 	});
 }
 
