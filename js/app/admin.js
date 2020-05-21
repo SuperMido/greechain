@@ -246,6 +246,21 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
+                    <td><span><strong><?php 
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "greechain";
+                    
+                    // Create connection
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+                    $sql = "SELECT label FROM comments WHERE batch_no='`batchNo`'";
+                    $labels = $conn->query($sql);
+                    $labels = array_filter($labels);
+                    if(count($labels)) {
+                        echo $average = array_sum($labels)/count($labels);
+                    }
+                    ?></strong></span> </td>
                     ` +
         commActionTd +
         `

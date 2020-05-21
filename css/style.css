@@ -2229,6 +2229,7 @@ table.dataTable thead .sorting:after {
   transition: transform 0.3s cubic-bezier(0.8, -0.33, 0.2, 1.33);
   width: 7px;
 }
+
 .radio input[type='radio'] {
   cursor: pointer;
   opacity: 0;

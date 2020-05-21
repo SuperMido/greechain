@@ -68,6 +68,7 @@
                                             <th>Xuất kho</th>
                                             <th>Nhập kho</th>
                                             <th>Nhà phân phối</th>
+                                            <th>Đánh giá</th>
                                             <th>Chi tiết</th>
                                             
 
@@ -75,7 +76,7 @@
                                     </thead>
                                     <tbody>
                                          <tr>
-                                             <td colspan="7" text-align="center">Dữ liệu không có sẵn</td>
+                                             <td colspan="9" text-align="center">Dữ liệu không có sẵn</td>
                                          </tr>   
                                     </tbody>
                                 </table>

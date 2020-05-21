@@ -180,58 +180,39 @@ $conn->close();
     <!-- /.right-sidebar -->
 </div>
 <div class="container-fluid">
-    <div class="row bg-title white-box">
-        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-            <div class="card">
-
+    <div class="white-box">
                 <div class="card-body ">
                     <h4 class="card-title">Thêm bình luận</h4>
                     <form class="mt-4" method="POST" action="" enctype="multipart/form-data">
                         <div class="form-group">
                             <label>Tên của bạn:</label>
-
                             <input type="text" name="username" class="form-control">
-
                         </div>
-
-
                         <div class="form-group">
                             <label>Bình luận</label>
-                            <textarea class="form-control" name="comment">
-
-                                            </textarea>
+                            <textarea class="form-control" name="comment"></textarea>
                         </div>
-
                         <button type="submit" class="btn btn-primary" name="add_submit">Gửi</button>
+                    </form>
                 </div>
-
-                </form>
-            </div>
-        </div>
-
     </div>
 </div>
-</div>
+
 <div class="container-fluid">
-    <div class="row bg-title white-box">
-        <?php foreach ($comments as $key => $value) {
-        ?>
-            <div class="card">
+    <div class="white-box">
                 <div class="card-body">
+                <?php foreach ($comments as $key => $value) {
+        ?>
                     <h4 class="card-title"><?php echo $value['userName']; ?></h4>
                     <h5 class="card-subtitle"><?php echo $value['comment']; ?></h5>
                     <h6><?php echo $value['timestamp']; ?></h6>
+                    <hr size="10">
+                    <?php } ?>
                 </div>
 
-            </div>
-        <?php } ?>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row bg-title">
 
-    </div>
-</div>
 <input type="hidden" id="batchNo" value="<?php echo $batchNo; ?>">
 
 <?php include('templates/_footer.php');
