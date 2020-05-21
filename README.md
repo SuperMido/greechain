@@ -1,5 +1,6 @@
 # Vietnam Hackathon 2020
 # GreeChain - Hệ thống số hóa quản lý chuỗi cung ứng cafe
+![GreeChain](https://i.imgur.com/oH1fWVO.jpg)
 ## Video Pitching
 [GreeChain - Video Pitching](https://www.youtube.com/watch?v=7PnR246bzIY)
 ## Demo Website
@@ -16,5 +17,5 @@
 - Nguyen Quoc Tai
 - Huynh Thai Hieu
 - Nguyen Cong Nhat
-- Nguyen Van Minh Tri
+- Nguyen Van Minh Tri\
 and a lot of support from Buddy and Mentors
