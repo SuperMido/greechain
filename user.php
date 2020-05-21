@@ -264,7 +264,7 @@
                                     
                                      <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect">Đặt lại</button>
-                                        <button type="button" id="updateHarvest"class="btn btn-primary">Lưu</button>
+                                        <button type="button" id="updateImport"class="btn btn-primary">Lưu</button>
                                     </div>
                                 </fieldset>
                             </form>
@@ -305,7 +305,7 @@
                                     </div>
                                      <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect">Đặt lại</button>
-                                        <button type="button" id="updateHarvest"class="btn btn-primary">Lưu</button>
+                                        <button type="button" id="updateProcessor"class="btn btn-primary">Lưu</button>
                                     </div>
                                 </fieldset>
                             </form>
