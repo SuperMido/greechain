@@ -432,14 +432,12 @@ function buildCultivationTable(finalEvents)
     {   
         var elem = finalEvents[tmpDataIndex];
         var batchNo = elem.batchNo;
-        var enterpriseTd = `<td>`+ elem.enterpriseName + `</td>`;
         var transactionHash = elem.transactionHash;
         var tr = "";
         
         if (elem.status == "NONG_TRAI") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>
-                  ` + enterpriseTd;
+                    <td>`+batchNo+`</td>`;
                   
               if(globCurrentUser.role == "NONG_TRAI")
               {
@@ -464,7 +462,7 @@ function buildCultivationTable(finalEvents)
 
         } else if (elem.status == "THU_HOACH") {
           tr = `<tr>
-                    <td>`+batchNo+`</td>`+ enterpriseTd + `
+                    <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     `;
                   if(globCurrentUser.role == "THU_HOACH")
@@ -489,7 +487,7 @@ function buildCultivationTable(finalEvents)
 
         } else if (elem.status == "XUAT_KHO") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>` + enterpriseTd + `
+                    <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                   `;
@@ -514,7 +512,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "NHAP_KHO") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>` + enterpriseTd + `
+                    <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
@@ -538,7 +536,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "PHAN_PHOI") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>` + enterpriseTd + `
+                    <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
@@ -562,7 +560,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "DONE") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>` + enterpriseTd + `
+                    <td>`+batchNo+`</td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
