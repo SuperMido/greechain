@@ -254,7 +254,7 @@ function buildCultivationTable(finalEvents) {
                     
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $dbname);
-                    $sql = "SELECT label FROM comments WHERE batch_no='`batchNo`'";
+                    $sql = "SELECT label FROM comments WHERE batch_no='` + batchNo + `'";
                     $labels = $conn->query($sql);
                     $labels = array_filter($labels);
                     if(count($labels)) {
