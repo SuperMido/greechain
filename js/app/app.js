@@ -307,23 +307,23 @@ function buildUserTable(globUserData) {
 
 		tbody +=
 			`<tr>
-	                        <td>` +
+	                        <td><strong>` +
 			data.user +
-			`</td>
-	                        <td>` +
+			`</strong></td>
+	                        <td><strong>` +
 			data.name +
-			`</td>
-	                        <td>` +
+			`</strong></td>
+	                        <td><strong>` +
 			data.contactNo +
-			`</td>
+			`<strong></td>
 	                        <td><span class="label label-` +
 			roleClass +
-			` font-weight-100">` +
+			` font-weight-100"><strong>` +
 			role +
-			`</span></td>
-	                        <td><a href="javascript:void(0);" class="text-inverse p-r-10" data-toggle="tooltip" data-userAddress="` +
+			`</strong></span></td>
+	                        <td><strong><a href="javascript:void(0);" class="text-inverse p-r-10" data-toggle="tooltip" data-userAddress="` +
 			data.user +
-			`" onclick="openEditUser(this);" title="Edit"><i class="ti-marker-alt"></i></a> </td>
+			`" onclick="openEditUser(this);" title="Edit"><i class="ti-marker-alt"></i></a> </strong></td>
 	                  </tr>`;
 	});
 

@@ -137,24 +137,24 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Nông trại</td>
-                                            <td><span class="label label-info font-weight-100">NONG_TRAI</span></td>
+                                            <td><strong>Nông trại</strong></td>
+                                            <td><span class="label label-info font-weight-100"><strong>NONG_TRAI</strong></span></td>
                                         </tr>
                                          <tr>
-                                            <td>Thu hoạch</td>
-                                            <td><span class="label label-success font-weight-100">THU_HOACH</span></td>
+                                            <td><strong>Thu hoạch</strong></td>
+                                            <td><span class="label label-success font-weight-100"><strong>THU_HOACH</strong></span></td>
                                         </tr>
                                         <tr>
-                                            <td>Xuất kho</td>
-                                            <td><span class="label label-warning font-weight-100">XUAT_KHO</span></td>
+                                            <td><strong>Xuất kho</strong></td>
+                                            <td><span class="label label-warning font-weight-100"><strong>XUAT_KHO</strong></span></td>
                                         </tr>
                                         <tr>
-                                            <td>Nhập kho</td>
-                                            <td><span class="label label-danger font-weight-100">NHAP_KHO</span></td>
+                                            <td><strong>Nhập kho</strong></td>
+                                            <td><span class="label label-danger font-weight-100"><strong>NHAP_KHO</strong></span></td>
                                         </tr>
                                         <tr>
-                                            <td>Phân phối</td>
-                                            <td><span class="label label-primary font-weight-100">PHAN_PHOI</span></td>
+                                            <td><strong>Phân phối</strong></td>
+                                            <td><span class="label label-primary font-weight-100"><strong>PHAN_PHOI</strong></span></td>
                                         </tr>
                                     </tbody>
                                 </table>
