@@ -1,7 +1,7 @@
 # Vietnam Hackathon 2020
 # GreeChain - Hệ thống số hóa quản lý chuỗi cung ứng cafe
 ## Video Pitching
-[GreeChain - Video Pitching] (https://www.youtube.com/watch?v=7PnR246bzIY)
+[GreeChain - Video Pitching](https://www.youtube.com/watch?v=7PnR246bzIY)
 ## Demo Website
 [GreeChain Website](http://greechain.glhf.vn/)
 ## PRIVATE KEYS of example accounts for MetaMask
