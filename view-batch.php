@@ -45,7 +45,7 @@ $url.= $_SERVER['REQUEST_URI'];
         <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
             <div style="display: none;">
                 <div class="modal-body" id="qrcode">
-                    <img src="https://chart.googleapis.com/chart?cht=qr&chld=H|1&chs=400x400&chl=<?php $url?>">
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chld=H|1&chs=400x400&chl=<?php echo $url?>">
                 </div>
             </div>
             <h3 class="page-title">Quy trình Lô hàng </h3>
