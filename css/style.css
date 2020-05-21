@@ -52,7 +52,8 @@ body {
 html {
   position: relative;
   min-height: 100%;
-  background: #fff;
+  background: url(../plugins/images/login-register.jpg) center center/cover
+    no-repeat !important;
 }
 h1,
 h2,
@@ -602,6 +603,7 @@ label {
 }
 .btn {
   border-radius: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .form-control {
   background-color: #fff;
@@ -1493,6 +1495,13 @@ table.dataTable thead .sorting:after {
 }
 .white-box {
   background-color: #fff;
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.info-white-box {
+  background-color: rgba(100, 202, 69, 0.788);
   padding: 25px;
   margin-bottom: 15px;
   border-radius: 25px;
@@ -3425,9 +3434,10 @@ ul.common li a:hover {
   width: 46%;
   padding: 20px;
   border: 1px solid rgba(120, 130, 140, 0.13);
-  border-radius: 0;
+  border-radius: 15px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 .timeline > li > .timeline-panel:before {
   content: ' ';
@@ -3852,16 +3862,15 @@ table.focus-on tbody tr.focused th {
   line-height: 210px;
 }
 .login-register {
-  background: url(../plugins/images/login-register.jpg) center center/cover
-    no-repeat !important;
+  background: url(../plugins/images/login-register.jpg) center center/cover no-repeat !important;
   height: 100%;
-  position: fixed;
+  position: relative;
 }
 
 @media (max-width: 750px) {
   .login-register {
     background: url(../plugins/images/login-register.jpg) center center/cover no-repeat !important;
-    height: 812px;
+    height: 100%;
     position: fixed;
   }
   .content-wrap {

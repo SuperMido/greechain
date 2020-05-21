@@ -181,34 +181,34 @@ $conn->close();
 </div>
 <div class="container-fluid">
     <div class="white-box">
-                <div class="card-body ">
-                    <h4 class="card-title">Thêm bình luận</h4>
-                    <form class="mt-4" method="POST" action="" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <label>Tên của bạn:</label>
-                            <input type="text" name="username" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Bình luận</label>
-                            <textarea class="form-control" name="comment"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="add_submit">Gửi</button>
-                    </form>
+        <div class="card-body ">
+            <h4 class="card-title">Thêm bình luận</h4>
+            <form class="mt-4" method="POST" action="" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Tên của bạn:</label>
+                    <input type="text" name="username" class="form-control">
                 </div>
+                <div class="form-group">
+                    <label>Bình luận</label>
+                    <textarea class="form-control" name="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" name="add_submit">Gửi</button>
+            </form>
+        </div>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="white-box">
-                <div class="card-body">
-                <?php foreach ($comments as $key => $value) {
-        ?>
-                    <h4 class="card-title"><?php echo $value['userName']; ?></h4>
-                    <h5 class="card-subtitle"><?php echo $value['comment']; ?></h5>
-                    <h6><?php echo $value['timestamp']; ?></h6>
-                    <hr size="10">
-                    <?php } ?>
-                </div>
+        <div class="card-body">
+            <?php foreach ($comments as $key => $value) {
+            ?>
+                <h4 class="card-title"><?php echo $value['userName']; ?></h4>
+                <h5 class="card-subtitle"><?php echo $value['comment']; ?></h5>
+                <h6><?php echo $value['timestamp']; ?></h6>
+                <hr size="10">
+            <?php } ?>
+        </div>
 
     </div>
 </div>
@@ -229,8 +229,47 @@ if (isset($_POST[add_submit])) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
     $conn->close();
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $host    = "34.87.51.188";
+    $port    = 1080;
+    set_time_limit(0);
+
+    $sql = "SELECT id, comment FROM comments ORDER BY id DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $row = mysqli_fetch_array($result);
+
+    $data->id = $row["id"];
+    $data->comment = $row["comment"];
+    $message = json_encode($data);
+    echo "Message To server :" . $message;
+    // create socket
+    $socket = socket_create(AF_INET, SOCK_STREAM, 0) or die("Could not create socket\n");
+    // connect to server
+    $result = socket_connect($socket, $host, $port) or die("Could not connect to server\n");
+    // send string to server
+    socket_write($socket, $message, strlen($message)) or die("Could not send data to server\n");
+    // get server response
+    $result = socket_read($socket, 1024) or die("Could not read server response\n");
+    echo "Reply From Server  :" . $result;
+
+    $jsonLiteral = $result;
+    $dataR = json_decode($jsonLiteral);
+    $output = $result . "\n";
+
+    //insert into database
+    $sql = "UPDATE comments SET label = '" .  $dataR->label . "' WHERE id = '" . $dataR->id . "'";
+    if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+    $conn->close();
+    socket_close($socket);
 } else {
 }
 ?>
