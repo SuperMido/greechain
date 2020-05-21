@@ -172,8 +172,9 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                    <td></td>
                     ` +
-                    commEmoTd+
+                    
         commActionTd +
         `
                 </tr>`;
@@ -189,8 +190,9 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                    <td></td>
                     ` +
-                    commEmoTd+
+                    
         commActionTd +
         `
                 </tr>`;
@@ -206,8 +208,9 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                    <td></td>
                     ` +
-                    commEmoTd+
+
         commActionTd +
         `
                 </tr>`;
@@ -223,8 +226,9 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
+                    <td></td>
                     ` +
-                    commEmoTd+
+
         commActionTd +
         `
                 </tr>`;
@@ -240,8 +244,8 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>
+                    <td></td>
                     ` +
-                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
