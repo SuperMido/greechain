@@ -156,6 +156,8 @@ function buildCultivationTable(finalEvents) {
       transactionHash +
       `" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>`;
 
+    var commEmoTd
+
     if (elem.status == 'NONG_TRAI') {
       tr =
         `<tr>
@@ -170,6 +172,7 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
@@ -187,6 +190,7 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
@@ -204,6 +208,7 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
@@ -221,6 +226,7 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>
                     <td><span class="label label-danger font-weight-100"><strong>Không khả dụng</strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
@@ -238,6 +244,7 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
@@ -254,22 +261,8 @@ function buildCultivationTable(finalEvents) {
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span> </td>
-                    <td><span><strong><?php 
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "greechain";
-                    
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    $sql = "SELECT label FROM comments WHERE batch_no='` + batchNo + `'";
-                    $labels = $conn->query($sql);
-                    $labels = array_filter($labels);
-                    if(count($labels)) {
-                        echo $average = array_sum($labels)/count($labels);
-                    }
-                    ?></strong></span> </td>
                     ` +
+                    commEmoTd+
         commActionTd +
         `
                 </tr>`;
