@@ -93,9 +93,17 @@ function getCultivationEvents(contractRef) {
         tmpData.transactionHash = elem.transactionHash;
         getBatchStatus(contractRef, tmpData.batchNo).then((result) => {
           tmpData.status = result;
+          getUserDetails(globUserContract, elem.returnValues.user, function(result){
 
-          finalEvents.push(tmpData);
+            tmpData.enterpriseName = result.name;
+
+            finalEvents.push(tmpData);
+
+            console.dir(finalEvents);
+          });
+          
         });
+        
       });
 
       setTimeout(function () {
@@ -136,6 +144,7 @@ function buildCultivationTable(finalEvents) {
       ` <a href="` +
       url +
       `" class="text-danger" target="_blank"><i class="fa fa-external-link"></i></a></td>`;
+    var enterpriseTd = `<td>`+ elem.enterpriseName + `</td>`;
     var commQrTd =
       `<td><a href="` +
       qrCode +
@@ -159,6 +168,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
             		` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-warning font-weight-100"><strong>Đang xử lý</strong></span></td>
@@ -175,6 +185,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
                     ` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -191,6 +202,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
                     ` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -207,6 +219,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
                     ` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -223,6 +236,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
                     ` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
@@ -239,6 +253,7 @@ function buildCultivationTable(finalEvents) {
         `<tr>
                     ` +
         commBatchTd +
+        enterpriseTd +
         commQrTd +
         `
                     <td><span class="label label-success font-weight-100"><strong>Hoàn thành</strong></span></td>
