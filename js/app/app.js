@@ -7,7 +7,7 @@ var globIcoAddress = {
 	Storage: '0x50064ce16a8a5176052fb83b5a6ebd1f043a3a4b',
 };
 
-var globSuperAdmin = "0x28239499ecbdf4ecf89f12ab44f17e52352238ed";
+var globSuperAdmin = "0xf3b3ac17b58e11ad5b1eb7f60a29fcfcd7c14c3f";
 var globAdminAddress = '';
 var globMainContract = false;
 var globUserContract = false;
