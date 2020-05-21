@@ -240,7 +240,7 @@ $url.= $_SERVER['REQUEST_URI'];
         <div class="card-body">
             <?php foreach ($comments as $key => $value) {
             ?>
-                <h4 class="card-title"><?php echo $value['userName']; ?></h4>
+                <h4 class="card-title"><strong><?php echo $value['userName']; ?></strong></h4>
                 <h5 class="card-subtitle"><?php echo $value['comment']; ?></h5>
                 <h6><?php echo $value['timestamp']; ?></h6>
                 <hr size="10">
