@@ -63,7 +63,6 @@
                                     <thead>
                                         <tr>
                                             <th>Mã lô hàng</th>
-                                            <th>Doanh nghiệp</th>
                                             <th>Nông trại</th>
                                             <th>Thu hoạch</th>
                                             <th>Xuất kho</th>

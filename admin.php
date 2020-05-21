@@ -62,7 +62,6 @@
                                     <thead>
                                         <tr>
                                             <th>Mã lô hàng</th>
-                                            <th>Doanh nghiệp</th>
                                             <th>Mã QR</th>
                                             <th>Nông trại</th>
                                             <th>Thu hoạch</th>

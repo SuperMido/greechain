@@ -93,15 +93,8 @@ function getCultivationEvents(contractRef) {
         tmpData.transactionHash = elem.transactionHash;
         getBatchStatus(contractRef, tmpData.batchNo).then((result) => {
           tmpData.status = result;
-          getUserDetails(globUserContract, elem.returnValues.user, function(result){
-
-            tmpData.enterpriseName = result.name;
-
-            finalEvents.push(tmpData);
-
-            console.dir(finalEvents);
-          });
           
+          finalEvents.push(tmpData);          
         });
         
       });

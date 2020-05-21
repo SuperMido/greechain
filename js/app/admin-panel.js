@@ -1,3 +1,5 @@
+var globCurrentUser = false;
+
 $(window).on('coinbaseReady', function () {
   getUserEvents(globUserContract);
 });

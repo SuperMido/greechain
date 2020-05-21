@@ -399,8 +399,7 @@ function getCultivationEvents(contractRef) {
                   tmpData.enterpriseName = result.name;
       
                   finalEvents.push(tmpData);
-      
-                  console.dir(finalEvents);
+   
                 });
             });
         });
