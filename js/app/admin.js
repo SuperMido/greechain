@@ -155,7 +155,10 @@ function buildCultivationTable(finalEvents) {
       transactionHash +
       `" target="_blank" class="text-inverse p-r-10" data-toggle="tooltip" title="View"><i class="ti-eye"></i></a> </td>`;
 
-    var commEmoTd
+    var commEmoTd=
+    `
+    <td><img src="plugins/images/natural.png" style="width: 20px; height: 20px;"></td>
+    `;
 
     if (elem.status == 'NONG_TRAI') {
       tr =
