@@ -2,18 +2,16 @@ var globIcoAddress = {
 	/*'old-CoffeeMain': "0xfA171Cda184d815D20a318fCe9920AafdC04934e",
 		  'old-CoffeeUser': "0x26d723acFe39f93A9702592dD9371851f81cF59F",*/
 
-	CoffeeMain: '0x2b6b23505660d1ac9ac09f05da2a24dd00f8e0a0',
-	CoffeeUser: '0xe1b21898a041c0193f0d86437581cceaeeb8a522',
-	Storage: '0x50064ce16a8a5176052fb83b5a6ebd1f043a3a4b',
+	CoffeeMain: '0xe5b7156b3e3dd83c7418f5555edae52049e508a0',
+	CoffeeUser: '0x7383d7261434c67247f19c66bedcc26eec7b5f5f',
+	Storage: '0x7d1cd7b074e0ea0c415ac8fa783ebe3631f75d84',
 };
 
-var globSuperAdmin = "0xf3b3ac17b58e11ad5b1eb7f60a29fcfcd7c14c3f";
-var globAdminAddress = '';
+var globAdminAddress = "0xf3b3ac17b58e11ad5b1eb7f60a29fcfcd7c14c3f";
 var globMainContract = false;
 var globUserContract = false;
 var globCoinbase = false;
 var globUserData = [];
-var enterpriseName = '';
 
 window.addEventListener('load', function () {
 	$('#storageContractAddress').html(globIcoAddress.Storage);
@@ -37,24 +35,13 @@ window.addEventListener('load', function () {
 		var currentPath = window.location.pathname;
 		var tmpStack = currentPath.split('/');
 		var currentPanel = tmpStack.pop();
+
 		globCoinbase = address;
 		$('#currentUserAddress').html(globCoinbase);
 		$(window).trigger('coinbaseReady');
 
 		if (currentPanel == "admin.php") {
-			getUser(globUserContract, function (data) {
-				if(data == undefined) window.location = "index.php";
-				if(data.role != "DOANH_NGHIEP") window.location = "index.php";
-				enterpriseName = data.name;
-			});
-			globAdminAddress = address;
-		} else if (currentPanel == "admin-panel.php") {
-			this.console.log(address, globSuperAdmin);
-
-			if(address != globSuperAdmin) {
-				window.location = "index.php";
-			}
-			globAdminAddress = globSuperAdmin;
+			if(address != globAdminAddress) window.location = "index.php";
 		}
 	});
 

@@ -93,9 +93,10 @@ function getCultivationEvents(contractRef) {
         tmpData.transactionHash = elem.transactionHash;
         getBatchStatus(contractRef, tmpData.batchNo).then((result) => {
           tmpData.status = result;
-
-          finalEvents.push(tmpData);
+          
+          finalEvents.push(tmpData);          
         });
+        
       });
 
       setTimeout(function () {

@@ -394,7 +394,13 @@ function getCultivationEvents(contractRef) {
             getBatchStatus(contractRef, tmpData.batchNo).then(result => {
                 tmpData.status = result;
 
-                finalEvents.push(tmpData);
+                getUserDetails(globUserContract, elem.returnValues.user, function(result){
+
+                  tmpData.enterpriseName = result.name;
+      
+                  finalEvents.push(tmpData);
+   
+                });
             });
         });
         
@@ -431,8 +437,7 @@ function buildCultivationTable(finalEvents)
         
         if (elem.status == "NONG_TRAI") {
             tr = `<tr>
-                    <td>`+batchNo+`</td>
-                  `;
+                    <td>`+batchNo+`</td>`;
                   
               if(globCurrentUser.role == "NONG_TRAI")
               {
