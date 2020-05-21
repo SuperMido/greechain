@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
 		//   web3 = new Web3(new Web3.providers.HttpProvider("https://winter-wandering-thunder.rinkeby.quiknode.pro/7f2ad124d76e6ac40604842d2c003283d3cb0c98/"));
 	} else {
 		// set the provider you want from Web3.providers
-		web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+		web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/d7dde0fa90274c6d873d75e84505f624"));
 	}
 
 	initContract();
@@ -45,7 +45,11 @@ window.addEventListener('load', function () {
 		}
 	});
 
-	updateLoginAccountStatus();
+	var currentPath = window.location.pathname;
+	var tmpStack = currentPath.split('/');
+	var currentPanel = tmpStack.pop();
+
+	if (currentPanel != "view-batch.php") updateLoginAccountStatus();
 
 	/* setInterval(function () {
 			  updateLoginAccountStatus();
