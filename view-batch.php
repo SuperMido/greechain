@@ -10,8 +10,8 @@ if (
 <?php
 $batchNo = isset($_GET['batchNo']) ? $_GET['batchNo'] : '';
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "greechain";
+$password = "greechain";
 $dbname = "greechain";
 
 // Create connection
