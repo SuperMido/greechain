@@ -22,6 +22,18 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM comments WHERE batch_no='$batchNo'";
 $comments = $conn->query($sql);
 $conn->close();
+
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+$url = "https://";   
+else  
+$url = "http://";   
+// Append the host(domain name, ip) to the URL.   
+$url.= $_SERVER['HTTP_HOST'];   
+
+// Append the requested resource location to the URL   
+$url.= $_SERVER['REQUEST_URI'];    
+
+//echo $url;  
 ?>
 <style type="text/css">
     .verified_info {
@@ -31,9 +43,34 @@ $conn->close();
 <div class="container-fluid">
     <div class="row bg-title">
         <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-            <h3 class="page-title">Quy trình Lô hàng <a href="javascript:void(0);" onclick="javascript:window.print();" class="text-info" title="Print Page Report"><i class="fa fa-print"></i> In QR</a></h3>
+            <div style="display: none;">
+                <div class="modal-body" id="qrcode">
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chld=H|1&chs=400x400&chl=<?php $url?>">
+                </div>
+            </div>
+            <h3 class="page-title">Quy trình Lô hàng </h3>
             <h4><b>Mã lô hàng: </b><?php echo $_GET['batchNo']; ?></h4>
+            <button onclick="qrcodeFunction('qrcode');" class="btn btn-outline-primary" title="Print Page Report"><i class="fa fa-print"></i> In QR</button>
         </div>
+        <script>
+            function qrcodeFunction(divId) {
+                var content = document.getElementById(divId).outerHTML;
+                var mywindow = window.open('', 'Print', 'height=600,width=800');
+
+                mywindow.document.write('<html><head><title>Print</title>');
+                mywindow.document.write('</head><body>');
+                mywindow.document.write(content);
+                mywindow.document.write('</body></html>');
+
+                mywindow.document.close();
+                mywindow.focus();
+                setTimeout(function() {
+                    mywindow.print();
+                    mywindow.close();
+                }, 400);
+                return true;
+            }
+        </script>
         <div class="col-lg-6 col-sm-8 col-md-8 col-xs-12">
 
         </div>
