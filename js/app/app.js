@@ -13,6 +13,7 @@ var globMainContract = false;
 var globUserContract = false;
 var globCoinbase = false;
 var globUserData = [];
+var enterpriseName = '';
 
 window.addEventListener('load', function () {
 	$('#storageContractAddress').html(globIcoAddress.Storage);
@@ -44,6 +45,7 @@ window.addEventListener('load', function () {
 			getUser(globUserContract, function (data) {
 				if(data == undefined) window.location = "index.php";
 				if(data.role != "DOANH_NGHIEP") window.location = "index.php";
+				enterpriseName = data.name;
 			});
 			globAdminAddress = address;
 		} else if (currentPanel == "admin-panel.php") {

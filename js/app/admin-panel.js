@@ -1,3 +1,7 @@
+$(window).on('coinbaseReady', function () {
+  getUserEvents(globUserContract);
+});
+
 function userFormSubmit() {
   if ($('form#userForm').parsley().isValid()) {
     var userWalletAddress = $('#userWalletAddress').val();
