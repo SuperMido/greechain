@@ -50,7 +50,7 @@ $url.= $_SERVER['REQUEST_URI'];
             </div>
             <h3 class="page-title">Quy trình Lô hàng </h3>
             <h4><b>Mã lô hàng: </b><?php echo $_GET['batchNo']; ?></h4>
-            <button onclick="qrcodeFunction('qrcode');" class="btn btn-outline-primary" title="Print Page Report"><i class="fa fa-print"></i> In QR</button>
+            <button id="printQR" style="display: none;" onclick="qrcodeFunction('qrcode');" class="btn btn-outline-primary" title="Print Page Report"><i class="fa fa-print"></i> In QR</button>
         </div>
         <script>
             function qrcodeFunction(divId) {

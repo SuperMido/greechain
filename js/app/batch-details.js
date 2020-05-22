@@ -4,7 +4,7 @@ window.addEventListener('load', function()
   batchNo = $("#batchNo").val();
 
 	if(batchNo!="" || batchNo!=null || batchNo!=undefined){
-		
+    if(web3.givenProvider != null) $("#printQR").attr("style", "");
 		getCultivationData(globMainContract,batchNo,function(result)
 		{
 			var parentSection = $("#cultivationSection");
