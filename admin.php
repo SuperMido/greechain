@@ -209,15 +209,15 @@
                                 </div>                              
                                 <div class="form-group">
                                     <label class="control-label" for="farmerAddress">Địa chỉ <i class="red">*</i></label>
-                                    <textarea class="form-control" id="farmerAddress" name="farmerAddress" placeholder="#" data-parsley-required="true"></textarea>
+                                    <textarea class="form-control" id="farmerAddress" name="farmerAddress" placeholder="Địa chỉ... " data-parsley-required="true"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="exporterName">Tên đơn vị xuất kho <i class="red">*</i></label>
-                                    <input type="text" class="form-control" id="exporterName" name="exporterName" placeholder="#" data-parsley-required="true">
+                                    <input type="text" class="form-control" id="exporterName" name="exporterName" placeholder="Tên đơn vị xuất kho... " data-parsley-required="true">
                                 </div> 
                                 <div class="form-group">
                                     <label class="control-label" for="importerName">Tên đơn vị nhập kho<i class="red">*</i></label>
-                                    <input type="text" class="form-control" id="importerName" name="importerName" placeholder="#" data-parsley-required="true">
+                                    <input type="text" class="form-control" id="importerName" name="importerName" placeholder="Tên đơn vị nhập kho..." data-parsley-required="true">
                                 </div> 
                             </fieldset>
                             

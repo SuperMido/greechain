@@ -92,11 +92,11 @@
                                             <fieldset style="border:0;">
                                                 <div class="form-group">
                                                     <label class="control-label" for="fullname">Họ và tên <i class="red">*</i></label>
-                                                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name" data-parsley-required="true">
+                                                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Họ và tên" data-parsley-required="true">
                                                 </div>                              
                                                 <div class="form-group">
                                                     <label class="control-label" for="contactNumber">Số điện thoại<i class="red">*</i></label>
-                                                    <input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="Contact No." data-parsley-required="true" data-parsley-type="digits" data-parsley-length="[10, 15]" maxlength="15">
+                                                    <input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="Số điện thoại" data-parsley-required="true" data-parsley-type="digits" data-parsley-length="[10, 15]" maxlength="15">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="role">Vai trò </label>
@@ -143,15 +143,15 @@
                                     </div>   -->                            
                                     <div class="form-group">
                                         <label class="control-label" for="typeOfSeed">Loại hạt giống</label>
-                                        <input type="text" class="form-control" id="typeOfSeed" name="typeOfSeed" placeholder="type of seed" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="typeOfSeed" name="typeOfSeed" placeholder="Loại hạt giống..." data-parsley-required="true">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label" for="coffeeFamily">Loại cà phê</label>
-                                        <input type="text" class="form-control" id="coffeeFamily" name="coffeeFamily" placeholder="coffee family" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="coffeeFamily" name="coffeeFamily" placeholder="Loại cà phê..." data-parsley-required="true">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label" for="fertilizer">Loại phân bón</label>
-                                        <input type="text" class="form-control" id="fertilizerUsed" name="fertilizer" placeholder="fertilizer used" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="fertilizerUsed" name="fertilizer" placeholder="Loại phân bón..." data-parsley-required="true">
                                     </div>
                                      <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect" >Đặt lại</button>
@@ -167,15 +167,15 @@
                                                             
                                     <div class="form-group">
                                         <label class="control-label" for="cropVariety">Sản lượng</label>
-                                        <input type="text" class="form-control" id="cropVariety" name="cropVariety" placeholder="coffee variety" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="cropVariety" name="cropVariety" placeholder="Sản lượng..." data-parsley-required="true">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label" for="temperatureUsed">Nhiệt độ (độ C)</label>
-                                        <input type="text" class="form-control" id="temperatureUsed" name="temperatureUsed" placeholder="temperature" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="temperatureUsed" name="temperatureUsed" placeholder="Nhiệt độ (độ C)..." data-parsley-required="true">
                                     </div>
                                      <div class="form-group">
                                         <label class="control-label" for="humidity">Độ ẩm</label>
-                                        <input type="text" class="form-control" id="humidity" name="humidity" placeholder="humidity" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="humidity" name="humidity" placeholder="Độ ẩm..." data-parsley-required="true">
                                     </div>                                
                                     <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect">Đặt lại</button>
@@ -191,32 +191,32 @@
 
                                     <div class="form-group">
                                         <label class="control-label" for="quantity">Số lượng (Kg)</label>
-                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Quantity" data-parsley-required="true">
+                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Số lượng (Kg)..." data-parsley-required="true">
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label" for="destinationAddress">Nơi nhận</label>
-                                        <input type="text" class="form-control" id="destinationAddress" name="destinationAddress" placeholder="Destination Address" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="destinationAddress" name="destinationAddress" placeholder="Nơi nhận..." data-parsley-required="true">
                                     </div> 
 
 
                                     <div class="form-group">
                                         <label class="control-label" for="shipName">Nhà vận chuyển</label>
-                                        <input type="text" class="form-control" id="shipName" name="shipName" placeholder="Ship Name" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="shipName" name="shipName" placeholder="Nhà vận chuyển..." data-parsley-required="true">
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label" for="shipNo">Mã vận chuyển</label>
-                                        <input type="text" class="form-control" id="shipNo" name="shipNo" placeholder="Ship No" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="shipNo" name="shipNo" placeholder="Mã vận chuyển..." data-parsley-required="true">
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label" for="estimateDateTime">Ngày giao dự kiến</label>
-                                        <input type="text" class="form-control datepicker-master" id="estimateDateTime" name="estimateDateTime" placeholder="Estimate Datetime" data-parsley-required="true">
+                                        <input type="text" class="form-control datepicker-master" id="estimateDateTime" name="estimateDateTime" placeholder="Ngày giao dự kiến..." data-parsley-required="true">
                                     </div>
                                      <div class="form-group">
                                         <label class="control-label" for="exporterId">Mã người xuất kho</label>
-                                        <input type="number" class="form-control" id="exporterId" name="exporterId" placeholder="Exporter ID" data-parsley-required="true">
+                                        <input type="number" class="form-control" id="exporterId" name="exporterId" placeholder="Mã người xuất kho..." data-parsley-required="true">
                                     </div>
                                      <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect">Đặt lại</button>
@@ -232,34 +232,34 @@
 
                                     <div class="form-group">
                                         <label class="control-label" for="quantity">Số lượng</label>
-                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Quantity" data-parsley-required="true">
+                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Số lượng..." data-parsley-required="true">
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label" for="shipName">Nhà vận chuyển</label>
-                                        <input type="text" class="form-control" id="shipName" name="shipName" placeholder="Ship Name" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="shipName" name="shipName" placeholder="Nhà vận chuyển..." data-parsley-required="true">
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label" for="shipNo">Mã vận chuyển</label>
-                                        <input type="text" class="form-control" id="shipNo" name="shipNo" placeholder="Ship No" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="shipNo" name="shipNo" placeholder="Mã vận chuyển..." data-parsley-required="true">
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label" for="transportInfo">Thông tin vận chuyển</label>
-                                        <input type="text" class="form-control" id="transportInfo" name="transportInfo" placeholder="Transport Info" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="transportInfo" name="transportInfo" placeholder="Thông tin vận chuyển..." data-parsley-required="true">
                                     </div> 
                                     <div class="form-group">
                                         <label class="control-label" for="warehouseName">Tên kho</label>
-                                        <input type="text" class="form-control" id="warehouseName" name="warehouseName" placeholder="Warehouse Name" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="warehouseName" name="warehouseName" placeholder="Tên kho..." data-parsley-required="true">
                                     </div> 
                                     <div class="form-group">
                                         <label class="control-label" for="warehouseAddress">Địa chỉ kho</label>
-                                        <input type="text" class="form-control" id="warehouseAddress" name="warehouseAddress" placeholder="Warehouse Address" data-parsley-required="true" >
+                                        <input type="text" class="form-control" id="warehouseAddress" name="warehouseAddress" placeholder="Địa chỉ kho..." data-parsley-required="true" >
                                     </div>                              
                                     <div class="form-group">
                                         <label class="control-label" for="importerId">Mã người nhập kho</label>
-                                        <input type="number" min="1" class="form-control" id="importerId" name="importerId" placeholder="Importer Id" data-parsley-required="true" >
+                                        <input type="number" min="1" class="form-control" id="importerId" name="importerId" placeholder="Mã người nhập kho..." data-parsley-required="true" >
                                     </div>                              
                                     
                                      <div class="form-group float-right">
@@ -275,33 +275,33 @@
                                 <fieldset style="border:0;">
                                     <div class="form-group">
                                         <label class="control-label" for="quantity">Số lượng (Kg)</label>
-                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Quantity" data-parsley-required="true">
+                                        <input type="number" min="1" class="form-control" id="quantity" name="quantity" placeholder="Số lượng (Kg)..." data-parsley-required="true">
                                     </div> 
                                     <div class="form-group">
                                         <label class="control-label" for="processingTemperature">Nhiệt độ (độ F)</label>
-                                        <input type="text" class="form-control" id="processingTemperature" name="temperature" placeholder="Temperature" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="processingTemperature" name="temperature" placeholder="Nhiệt độ (độ F)..." data-parsley-required="true">
                                     </div>                              
                                     <div class="form-group">
                                         <label class="control-label" for="rostingDuration">Thời gian rang (giây)</label>
-                                        <input type="number" min="1" class="form-control" id="rostingDuration" name="rostingDuration" placeholder="Time for roasting" data-parsley-required="true" >
+                                        <input type="number" min="1" class="form-control" id="rostingDuration" name="rostingDuration" placeholder="Thời gian rang (giây)..." data-parsley-required="true" >
                                     </div>
                                
                                     <div class="form-group">
                                         <label class="control-label" for="internalBatchNo">Mã lô hàng (thành phẩm)</label>
-                                        <input type="text" class="form-control" id="internalBatchNo" name="internalBatchNo" placeholder="Internal Batch no" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="internalBatchNo" name="internalBatchNo" placeholder="Mã lô hàng (thành phẩm)..." data-parsley-required="true">
                                     </div>
                            
                                     <div class="form-group">
                                         <label class="control-label" for="packageDateTime">Ngày đóng gói</label>
-                                        <input type="text" class="form-control datepicker-master" id="packageDateTime" name="packageDateTime" placeholder="Packaging Date" data-parsley-required="true">
+                                        <input type="text" class="form-control datepicker-master" id="packageDateTime" name="packageDateTime" placeholder="Ngày đóng gói..." data-parsley-required="true">
                                     </div> 
                                     <div class="form-group">
                                         <label class="control-label" for="processorName">Tên xưởng</label>
-                                        <input type="text" class="form-control" id="processorName" name="processorName" placeholder="Processor Name" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="processorName" name="processorName" placeholder="Tên xưởng..." data-parsley-required="true">
                                     </div>                              
                                     <div class="form-group">
                                         <label class="control-label" for="processorAddress">Địa chỉ xưởng</label>
-                                        <input type="text" class="form-control" id="processorAddress" name="processorAddress" placeholder="Processor Address" data-parsley-required="true">
+                                        <input type="text" class="form-control" id="processorAddress" name="processorAddress" placeholder="Địa chỉ xưởng..." data-parsley-required="true">
                                     </div>
                                      <div class="form-group float-right">
                                         <button type="reset" class="btn btn-default waves-effect">Đặt lại</button>

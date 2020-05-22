@@ -75,7 +75,7 @@ function updateLoginAccountStatus() {
 		if (err) {
 			console.log('An error occurred ' + err);
 		} else if (accounts.length == 0) {
-			sweetAlert('Error', 'Please login to MetaMask..!', 'error');
+			sweetAlert('Lỗi', 'Vui lòng đăng nhập MetaMask..!', 'error');
 			$('#currentUserAddress').html(
 				'0x0000000000000000000000000000000000000000'
 			);
@@ -107,7 +107,7 @@ function getUserDetails(contractRef, userAddress, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get User Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin người dùng', 'error');
 			callback(0);
 		});
 }
@@ -127,7 +127,7 @@ function getCultivationData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Cultivation Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin lô hàng', 'error');
 			callback(0);
 		});
 }
@@ -147,7 +147,7 @@ function getFarmInspectorData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Farm Inspection Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin nông trại', 'error');
 			callback(0);
 		});
 }
@@ -167,7 +167,7 @@ function getHarvesterData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Harvesting Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin thu hoạch', 'error');
 			callback(0);
 		});
 }
@@ -187,7 +187,7 @@ function getExporterData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Exporting Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin xuất kho', 'error');
 			callback(0);
 		});
 }
@@ -207,7 +207,7 @@ function getImporterData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Importing Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin nhập kho', 'error');
 			callback(0);
 		});
 }
@@ -227,7 +227,7 @@ function getProcessorData(contractRef, batchNo, callback) {
 			callback(result);
 		})
 		.catch((error) => {
-			sweetAlert('Error', 'Unable to get Processing Details', 'error');
+			sweetAlert('Lỗi', 'Không thể lấy thông tin phân phối', 'error');
 			callback(0);
 		});
 }
@@ -393,7 +393,7 @@ function stopLoader() {
 $('#userFormClick').click(function () {
 	$('#userForm').trigger('reset');
 	changeSwitchery($('#isActive'), false);
-	$('#userModelTitle').html('Add User');
+	$('#userModelTitle').html('Thêm người dùng');
 	$('#imageHash').html('');
 	$('#userFormModel').modal();
 });
@@ -403,7 +403,7 @@ function getUser(contractRef,callback)
 {
    contractRef.methods.getUser(globCoinbase).call(function (error, result) {
         if(error){
-            alert("Unable to get User" + error);    
+            alert("Không thể lấy thông tin Người dùng" + error);    
         }
         newUser = result;
         if (callback)
@@ -446,7 +446,7 @@ function handleFileUpload(event) {
 	reader.onloadend = function () {
 		$('#userFormBtn').prop('disabled', true);
 		$('i.fa-spinner').show();
-		$('#imageHash').html('Processing......');
+		$('#imageHash').html('Đang xử lý......');
 		saveToIpfs(reader);
 	};
 
@@ -472,7 +472,7 @@ function saveToIpfs(reader) {
 		var btnViewImage =
 			'<a href="' +
 			profileImageLink +
-			'" target="_blank" class=" text-danger"><i class="fa fa-eye"></i> View Image</a>';
+			'" target="_blank" class=" text-danger"><i class="fa fa-eye"></i> Xem ảnh</a>';
 
 		$('#userProfileHash').val(imageHash);
 		$('#imageHash').html(btnViewImage);

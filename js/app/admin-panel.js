@@ -28,7 +28,7 @@ function userFormSubmit() {
         $('#userFormModel').modal('hide');
       })
       .on('receipt', function (receipt) {
-        receiptMessage = 'User Created Successfully';
+        receiptMessage = 'Đã tạo người dùng thành công';
         handleTransactionReceipt(receipt, receiptMessage);
         $('#userFormModel').modal('hide');
         getUserEvents(globUserContract);

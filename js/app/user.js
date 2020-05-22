@@ -35,7 +35,7 @@ $(window).on("coinbaseReady", function ()
            data.contactNo.trim().length <=0 && 
            data.role.trim().length <=0 )
         {
-          swal("Oops","Your Account was not found , Please contact Admin ","error");
+          swal("Ối","Không thể tìm thấy tài khoản của bạn, vui lòng liên hệ chủ Doanh nghiệp","error");
           setTimeout(function()
           {
             window.location = "index.php";
@@ -44,8 +44,8 @@ $(window).on("coinbaseReady", function ()
         }
       }else{
           swal({
-              title: "Insufficient Access",
-              text: "Your Account is blocked by Admin , Please contact to Admin",
+              title: "Truy cập bị từ chối",
+              text: "Tài khoản của bạn đã bị vô hiệu hóa, vui lòng liên hệ chủ Doanh nghiệp",
               type: "error",
               showCancelButton: false,
               confirmButtonColor: "#DD6B55",
@@ -118,7 +118,7 @@ function getUser(contractRef,callback)
 {
    contractRef.methods.getUser(globCoinbase).call(function (error, result) {
         if(error){
-            alert("Unable to get User" + error);    
+            alert("Không thể lấy thông tin người dùng" + error);    
         }
         newUser = result;
         if (callback)
@@ -140,7 +140,7 @@ function updateUser(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "User Profile Updated Succussfully";
+            receiptMessage = "Tài khoản được cập nhật thành công";
             handleTransactionReceipt(receipt,receiptMessage);
             $("#userFormModel").modal('hide');
         })
@@ -189,7 +189,7 @@ function updateFarmInspection(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "Farm Inspection Updated Succussfully";
+            receiptMessage = "Cập nhật thông tin nông trại thành công";
             handleTransactionReceipt(receipt,receiptMessage)
         })
         .on('error',function(error)
@@ -229,7 +229,7 @@ function updateHarvest(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "Harvest Updated Succussfully";
+            receiptMessage = "Cập nhật thông tin thu hoạch thành công";
             handleTransactionReceipt(receipt,receiptMessage)
         })
         .on('error',function(error)
@@ -277,7 +277,7 @@ function updateExport(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "Export Updated Succussfully";
+            receiptMessage = "Cập nhật thông tin xuất kho thành công";
             handleTransactionReceipt(receipt,receiptMessage)
         })
         .on('error',function(error)
@@ -321,7 +321,7 @@ function updateImport(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "Import Updated Succussfully";
+            receiptMessage = "Cập nhật thông tin nhập kho thành công";
             handleTransactionReceipt(receipt,receiptMessage)
         })
         .on('error',function(error)
@@ -367,7 +367,7 @@ function updateProcessor(contractRef,data)
         })
         .on('receipt',function(receipt)
         {
-            receiptMessage = "Processing Updated Succussfully";
+            receiptMessage = "Cập nhật thông tin phân phối thành công";
             handleTransactionReceipt(receipt,receiptMessage)
         })
         .on('error',function(error)
