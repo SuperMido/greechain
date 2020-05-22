@@ -4,7 +4,10 @@ window.addEventListener('load', function()
   batchNo = $("#batchNo").val();
 
 	if(batchNo!="" || batchNo!=null || batchNo!=undefined){
-    if(web3.givenProvider != null) $("#printQR").attr("style", "");
+    getCurrentAccountAddress((address) => {
+      if(address == globAdminAddress) 
+        $("#printQR").attr("style", "");
+    });
 		getCultivationData(globMainContract,batchNo,function(result)
 		{
 			var parentSection = $("#cultivationSection");
